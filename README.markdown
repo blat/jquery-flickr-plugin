@@ -10,7 +10,7 @@ demo
 
 setup
 ------------------
-*   depends on: [jQuery](http://jquery.com/), [FancyBox](http://fancybox.net/).
+depends on: [jQuery](http://jquery.com/), [FancyBox](http://fancybox.net/).
 
 1.  in header, include js and css files
         <script type="text/javascript" src="js/jquery.flickr.js"></script>
