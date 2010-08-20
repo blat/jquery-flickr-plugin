@@ -16,7 +16,7 @@ depends on: [jQuery](http://jquery.com/), [FancyBox](http://fancybox.net/).
         <script type="text/javascript" src="js/jquery.flickr.js"></script>
         <link rel="stylesheet" type="text/css" href="css/jquery.flickr.css" />
 2.  in body
-        <div id="my_flickr"></div>
+        <div id="my_gallery"></div>
 3.  then apply plugin
         <script type="text/javascript">
             $(function() {
