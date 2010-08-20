@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Flickr photosets plugin for jQuery</title>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery.fancybox-1.3.1.pack.js"></script>
+        <script type="text/javascript" src="js/jquery.flickr.js"></script>
+        <script type="text/javascript">
+            $(function() {
+                $('#my_flickr').flickr({
+                    user_id: '44244432@N03',
+                    api_key: 'dd51633da24ca17a6c97e8cf7992b1fe',
+                    size: 'large',
+                    count: 3
+                });
+            });
+        </script>
+        <link rel="stylesheet" type="text/css" href="css/jquery.fancybox-1.3.1.css" />
+        <link rel="stylesheet" type="text/css" href="css/jquery.flickr.css" />
+        <style>
+            * { margin: 0; padding: 0; }
+            ul#flickr { width: 1005px; margin-top: 100px; }
+            ul#flickr li { margin: 10px; padding: 5px; border: 1px solid #eee; background: #eee; }
+            ul#flickr li a { border: 1px solid #dadada; }
+        </style>
+    </head>
+    <body>
+        <div id="my_flickr"></div>
+    </body>
+</html>
