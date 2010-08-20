@@ -13,25 +13,25 @@ setup
 *   depends on: [jQuery](http://jquery.com/), [FancyBox](http://fancybox.net/).
 
 1.  in header, include js and css files
-    > <script type="text/javascript" src="js/jquery.flickr.js"></script>
-    > <link rel="stylesheet" type="text/css" href="css/jquery.flickr.css" />
+    <script type="text/javascript" src="js/jquery.flickr.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/jquery.flickr.css" />
 2.  in body
-    > <div id="my_flickr"></div>
+    <div id="my_flickr"></div>
 3.  then apply plugin
-    > <script type="text/javascript">
-    >     $(function() {
-    >         $('#my_gallery').flickr({
-    >             user_id: '##USER_ID##',
-    >             api_key: '##API_KEY##',
-    >         });
-    >     });
-    > </script>
+    <script type="text/javascript">
+        $(function() {
+            $('#my_gallery').flickr({
+                user_id: '##USER_ID##',
+                api_key: '##API_KEY##',
+            });
+        });
+    </script>
 
 settings
 ----------------------
 *   **user_id**: Flickr photoset's owner ID (required)
 *   **api_key**: Your [Flickr API key](http://www.flickr.com/services/api/keys/) (required)
-*   **size**: Size of the thumbnails, *small*, *normal* or *large* (optional, default is *normal*)
+*   **size**: Size of thumbnails, *small*, *normal* or *large* (optional, default is *normal*)
 *   **count**: Number of photosets to display, set *false* to *no limit* (optional, default is *false*)
 *   **speed**: (optional, default is 100)
 
