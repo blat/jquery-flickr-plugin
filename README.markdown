@@ -13,19 +13,19 @@ setup
 *   depends on: [jQuery](http://jquery.com/), [FancyBox](http://fancybox.net/).
 
 1.  in header, include js and css files
-    <script type="text/javascript" src="js/jquery.flickr.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/jquery.flickr.css" />
+    &lt;script type="text/javascript" src="js/jquery.flickr.js"&gt;&lt;/script&gt;
+    &lt;link rel="stylesheet" type="text/css" href="css/jquery.flickr.css" /&gt;
 2.  in body
-    <div id="my_flickr"></div>
+    &lt;div id="my_flickr"&gt;&lt;/div&gt;
 3.  then apply plugin
-    <script type="text/javascript">
+    &lt;script type="text/javascript"&gt;
         $(function() {
             $('#my_gallery').flickr({
                 user_id: '##USER_ID##',
                 api_key: '##API_KEY##',
             });
         });
-    </script>
+    &lt;/script&gt;
 
 settings
 ----------------------
