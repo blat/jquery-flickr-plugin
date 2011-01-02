@@ -1,3 +1,11 @@
+/** 
+ * Flickr Photosets
+ *
+ * @author      Mickael BLATIERE
+ * @license     http://www.opensource.org/licenses/mit-license.php - Licensed under The MIT License
+ * @link        http://github.com/blat/jquery-flickr-plugin
+ */
+
 (function($) {
 
     var api_url = 'http://api.flickr.com/services/rest/';
@@ -52,10 +60,11 @@
                         .append($('<span></span>').text(title))
                         .click(function() { flickr_lightbox($(this).attr('id')); return false; })
                     ).hide()
+                    .append($('<img></img>', {src: thumbnail}).hide())
                 );
             }
         });
-        flickr_animate();
+        flickr_preload();
     }
 
     flickr_lightbox = function(id) {
@@ -68,6 +77,19 @@
 
     flickr_animate = function() { 
         $('#flickr li:hidden:first').fadeIn(options.speed, flickr_animate);
+    }
+
+    flickr_preload = function() {
+        var images = $('#flickr li img');
+        var count = images.length;
+        images.one('load', function() {
+            count--;
+            if (count == 0) {
+                flickr_animate();
+            }
+        }).each(function(){
+            if (this.complete)  $(this).trigger("load");
+        });
     }
 
     flickr_photoset = function(photoset) {
