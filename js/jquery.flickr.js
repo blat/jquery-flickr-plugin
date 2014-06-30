@@ -8,7 +8,7 @@
 
 (function($) {
 
-    var api_url = 'http://api.flickr.com/services/rest/';
+    var api_url = 'https://api.flickr.com/services/rest/';
 
     var options = {};
     var default_options = {
